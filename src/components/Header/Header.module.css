@@ -1,0 +1,40 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 25px;
+    margin: 15px 0px;
+}
+
+.basket-wrapper {
+    margin-right: 6px;
+}
+
+.basket-container {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    text-align: end;
+}
+
+.basket-icon {
+    width: 23px;
+    height: 23px;
+}
+
+.goods-counter {
+    position: absolute;
+    top: -7px;
+    right: -9px;
+    background-color: #FFA542;
+    color: white;
+    font-size: 15px;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+}
