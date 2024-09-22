@@ -14,20 +14,20 @@ const Footer: React.FC = () => {
             <div className={styles["footer-column"]}>
                 <Link to="/">Условия сервиса</Link>
                 <div className={styles["footer-languages"]}>
-                    <img src="/images/icons/world.svg" alt="world icon for language section" />
+                    <img src={`${process.env.PUBLIC_URL}/images/icons/world.svg`} alt="world icon for language section" />
                     <Link className={styles["footer-languages-active"]} to="/">Рус</Link>
                     <Link to="/">Eng</Link>
                 </div>
             </div>
             <div className={styles["footer-contact"]}>
                 <Link to="https://vk.com/neoflex_ru" target="_blank" rel="noopener noreferrer">
-                    <img className={styles["footer-contact-icon"]} src="/images/icons/VK.svg" alt="VK icon" />
+                    <img className={styles["footer-contact-icon"]} src={`${process.env.PUBLIC_URL}/images/icons/VK.svg`} alt="VK icon" />
                 </Link>
                 <Link to="https://t.me/neoflexcareers" target="_blank" rel="noopener noreferrer">
-                    <img className={styles["footer-contact-icon"]} src="/images/icons/Telegram.svg" alt="Telegram icon" />
+                    <img className={styles["footer-contact-icon"]} src={`${process.env.PUBLIC_URL}/images/icons/Telegram.svg`} alt="Telegram icon" />
                 </Link>
                 <Link to="tel:+74959842513" target="_blank" rel="noopener noreferrer">
-                    <img className={styles["footer-contact-icon"]} src="/images/icons/Whatsapp.svg" alt="Whatsapp icon" />
+                    <img className={styles["footer-contact-icon"]} src={`${process.env.PUBLIC_URL}/images/icons/Whatsapp.svg`} alt="Whatsapp icon" />
                 </Link>
             </div>
         </footer>

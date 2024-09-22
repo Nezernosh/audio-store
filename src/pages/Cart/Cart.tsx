@@ -37,18 +37,18 @@ const Cart: React.FC = () => {
                                     onClick={() => updateQuantity(item.title, -1)}
                                     disabled={item.quantity <= 1}
                                 >
-                                    <img src="/images/icons/minus.svg" alt="minus symbol" className={styles["quantity-control-icon"]} />
+                                    <img src={`${process.env.PUBLIC_URL}/images/icons/minus.svg`} alt="minus symbol" className={styles["quantity-control-icon"]} />
                                 </button>
                                 <span>{item.quantity}</span>
                                 <button
                                     className={styles["quantity-control"]}
                                     onClick={() => updateQuantity(item.title, 1)}
                                 >
-                                    <img src="/images/icons/plus.svg" alt="plus symbol" className={styles["quantity-control-icon"]} />
+                                    <img src={`${process.env.PUBLIC_URL}/images/icons/plus.svg`} alt="plus symbol" className={styles["quantity-control-icon"]} />
                                 </button>
                             </div>
                             <p className={styles["cart-item-subtotal"]}>{item.price * item.quantity} ₽</p>
-                            <img className={styles['remove-button']} src="/images/icons/delete.svg" alt="delete icon" onClick={() => {
+                            <img className={styles['remove-button']} src={`${process.env.PUBLIC_URL}/images/icons/delete.svg`} alt="delete icon" onClick={() => {
                                 if (window.confirm(`Вы уверены, что хотите удалить ${item.title} из корзины?`)) {
                                     removeFromCart(item.title);
                                 }

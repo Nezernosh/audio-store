@@ -8,7 +8,7 @@ import './App.css';
 
 
 const App: React.FC = () => (
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <Header />
     <Routes>
       <Route path="/" element={<Catalog />} />

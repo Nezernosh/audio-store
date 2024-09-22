@@ -17,13 +17,13 @@ const Header: React.FC = () => {
                 <div className={styles['basket-wrapper']}>
                     <div className={styles['basket-container']}>
                         <Link to="/">
-                            <img className={styles['basket-icon']} src="/images/icons/favourites.svg" alt="favourites icon" />
+                            <img className={styles['basket-icon']} src={`${process.env.PUBLIC_URL}/images/icons/favourites.svg`} alt="favourites icon" />
                         </Link>
                         <span className={styles['goods-counter']}>2</span>
                     </div>
                     <div className={styles['basket-container']}>
                         <Link to="/cart">
-                            <img className={styles['basket-icon']} src="/images/icons/cart.svg" alt="cart icon" />
+                            <img className={styles['basket-icon']} src={`${process.env.PUBLIC_URL}/images/icons/cart.svg`} alt="cart icon" />
                         </Link>
                         <span className={styles['goods-counter']}>{totalItems}</span>
                     </div>
